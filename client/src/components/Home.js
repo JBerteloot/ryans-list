@@ -1,0 +1,87 @@
+import React from "react"
+
+import CategoryList from "./CategoryList"
+
+export default props => {
+  return (
+    <div id="home">
+      <aside id="left">
+        <h1>Ryan's List</h1>
+        <p>create account</p>
+        <p>my account</p>
+        <input type="text" placeholder="search"/>
+        <div>Calendar</div>
+        <p>help, faq, abuse, legal</p>
+        <p>avoid scams + fraud</p>
+        <p>personal safety tips</p>
+        <p>about craigslist</p>
+      </aside>
+      <main>
+        <header>
+          <p>las vegas</p>
+        </header>
+        <div className="categories">
+          <div className="categorybox">
+            <CategoryList /> 
+          </div>
+          <div className="categorybox">
+            <CategoryList /> 
+          </div>
+          <div className="categorybox">
+            <CategoryList /> 
+          </div>
+          <div className="categorybox">
+            <CategoryList /> 
+          </div>
+          <div className="categorybox">
+            <CategoryList /> 
+          </div>
+          <div className="categorybox">
+            <CategoryList /> 
+          </div>
+        </div>
+      </main>
+      
+      <aside id="right">
+      <select>
+        <option>english</option>
+      </select>
+      <nav>
+        <div className="slidingdown">
+          <b>nearby cl</b>
+          <ul>
+            <li>city 1</li>
+            <li>city 2</li>
+            <li>city 3</li>
+            <li>city 4</li>
+            <li>city 5</li>
+            <li>city 6</li>
+          </ul>
+        </div>
+        <div className="slidingdown">
+          <b>us cities</b>
+          <ul>
+            <li>city 1</li>
+            <li>city 2</li>
+            <li>city 3</li>
+            <li>city 4</li>
+            <li>city 5</li>
+            <li>city 6</li>
+          </ul>
+        </div>
+        <div className="slidingdown">
+          <b>us states</b>
+          <ul>
+            <li>city 1</li>
+            <li>city 2</li>
+            <li>city 3</li>
+            <li>city 4</li>
+            <li>city 5</li>
+            <li>city 6</li>
+          </ul>
+        </div>
+      </nav>
+      </aside>
+    </div>
+  )
+}

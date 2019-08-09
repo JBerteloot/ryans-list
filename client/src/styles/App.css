@@ -1,2 +1,108 @@
 html {box-sizing:border-box;}
 *, *::before, *::after {box-sizing:inherit;}
+
+body {
+  margin: auto;
+  display: flex;
+}
+
+#container {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+}
+
+#home {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: row;
+  justify-content: space-between;
+}
+
+#left {
+  width: 20%;
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  border-left: .5px solid rgb(195, 195, 195);
+  border-right: .5px solid rgb(195, 195, 195);
+}
+
+#left input {
+  width: 70%;
+}
+
+main {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+main header {
+  width: auto;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  border-top: .5px solid rgb(195, 195, 195);
+  border-bottom: .5px solid rgb(195, 195, 195);
+}
+
+main header p {
+  margin: 7px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: sans-serif;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.categorybox {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0px;
+  width: 31%;
+  justify-content: flex-start;
+}
+
+#right {
+  width: 15%;
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  border-left: .5px solid rgb(195, 195, 195);
+  border-right: .5px solid rgb(195, 195, 195);
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+#right select {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.slidingdown {
+  color: blue;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+  border-top: .5px solid rgb(195, 195, 195);
+  border-bottom: .5px solid rgb(195, 195, 195);
+  padding: 5px
+}
+
+.slidingdown ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 5px;
+}

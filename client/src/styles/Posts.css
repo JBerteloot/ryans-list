@@ -1,0 +1,125 @@
+.postlist {
+  display: flex;
+  flex-direction: column;
+  border: solid green;
+  width: 65%;
+  padding: 10px;
+}
+
+.postlist span {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.postlist span input {
+  width: 100%;
+}
+
+.postlist nav  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 30px;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: .5px solid rgb(195, 195, 195);
+  border-radius: 5px;
+  width: 300px;
+}
+
+.postlist nav button, .postlist nav select {
+  border-radius: 5px;
+}
+
+.postlist nav select, .newest {
+  background-color: rgb(235, 235, 235);
+  border-top: .5px solid rgb(195, 195, 195);
+  border-bottom: .5px solid rgb(195, 195, 195);
+}
+
+.middle button {
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.middle p {
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 150px;
+  border-left: .5px solid rgb(195, 195, 195);
+  padding-left: 5px;
+  border-right: .5px solid rgb(195, 195, 195);
+  padding-right: 5px;
+}
+
+.middle .prev {
+  border-left: .5px solid rgb(195, 195, 195);
+  padding-left: 5px;
+  border-radius: 0px;
+}
+
+.postlist main {
+  display: flex;
+  flex-direction: column;
+}
+
+.linktopost {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.linktopost p {
+  padding: 5px;
+}
+
+.linktopost button {
+  height: 20px;
+  border: none;
+}
+
+.linktopost p:nth-child(2) {
+  color: rgb(195, 195, 195);
+  font-size: 12px;
+}
+
+.linktopost p:nth-child(3) {
+  color: black;
+  font-size: 14px;
+  border: .25 solid black;
+  border-radius: 15px;
+}
+
+.linktopost p:nth-child(4) {
+  color: blue;
+  font-size: 16px;
+}
+
+.linktopost p:nth-child(5) {
+  color: black;
+  font-size: 14px;
+}
+
+.linktopost p:nth-child(6) {
+  color: yellow;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+

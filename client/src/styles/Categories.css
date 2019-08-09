@@ -1,0 +1,78 @@
+.categorypage {
+  width: 100%;
+  margin: auto;
+  border: solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.categorypageheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(235, 235, 235);
+  border-top: .5px solid rgb(195, 195, 195);
+  border-bottom: .5px solid rgb(195, 195, 195);
+  height: 40px;
+  align-items: center;
+  padding: 10px;
+}
+
+.categorypage main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#filteraside {
+  border: solid orange;
+  width: 20%;
+}
+
+.rightasidecat {
+    border: solid orange;
+    width: 15%;
+}
+
+.categboxheader {
+  margin: 0px;
+  height: 18%;
+  background-color: rgb(235, 235, 235);
+  border-top: .5px solid rgb(195, 195, 195);
+  border-bottom: .5px solid rgb(195, 195, 195);
+  text-align: center;
+}
+
+.categboxheader a {
+  text-decoration: none;
+  color: blue;
+}
+
+.categboxheader a h1 {
+  margin: 0px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.subcategory {
+  font-size: 12px;
+  color: blue;
+}
+
+.subcategory ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.subcategory ul li {
+  border-bottom: .25px solid rgb(222, 220, 220);
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+
+
+
+
