@@ -26,7 +26,7 @@ export default props => {
         </div>
         <Route exact path ="/" component={Home} />
         <Route exact path ="/CategoryList" component={CategoryList} />
-        <Route exact path ="/Category/:id" component={Category} />
+        <Route exact path ="/Category/1" component={Category} />
         <Route exact path ="/Post/:id" component={Post} />
         <Route exact path ="/CreatePost" component={CreatePost} />
       </Router>
