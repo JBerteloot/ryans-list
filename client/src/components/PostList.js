@@ -2,7 +2,10 @@ import React from "react"
 
 import LinkToPost from './LinkToPost'
 
+
 export default props => {
+
+
   return (
     // div className="postlist" from /Category
     <>
@@ -25,18 +28,11 @@ export default props => {
         <button className="newest">newest</button>
       </nav>
       <main>
+        {props.posts.map(post => (
         <div className="linktopost">
-          <LinkToPost />
+          <LinkToPost post={post} />
         </div>
-        <div className="linktopost">
-          <LinkToPost />
-        </div>
-        <div className="linktopost">
-          <LinkToPost />
-        </div>
-        <div className="linktopost">
-          <LinkToPost />
-        </div>
+        ))}
       </main>
     </>
   )

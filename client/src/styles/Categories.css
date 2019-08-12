@@ -36,8 +36,12 @@
 }
 
 .categboxheader {
+  justify-content: center;
   margin: 0px;
   height: 18%;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: rgb(235, 235, 235);
   border-top: .5px solid rgb(195, 195, 195);
   border-bottom: .5px solid rgb(195, 195, 195);
@@ -58,6 +62,7 @@
 .subcategory {
   font-size: 12px;
   color: blue;
+  /* column-count: 2 */
 }
 
 .subcategory ul {
@@ -70,6 +75,11 @@
   border-bottom: .25px solid rgb(222, 220, 220);
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.categorybox:nth-child(2) .subcategory ul {
+  column-count: 2;
+  width: 100%
 }
 
 

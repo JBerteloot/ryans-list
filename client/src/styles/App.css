@@ -7,9 +7,10 @@ body {
 }
 
 #container {
-  width: 1000px;
+  width: 1200px;
   margin: auto;
   display: flex;
+  justify-content: center;
 }
 
 #home {
@@ -58,7 +59,9 @@ main header p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: flex-start;
   font-family: sans-serif;
   margin: 0px;
   margin-top: 10px;
@@ -70,8 +73,9 @@ main header p {
   padding-bottom: 10px;
   padding-top: 10px;
   margin: 0px;
-  width: 31%;
-  justify-content: flex-start;
+  width: 33%;
+  align-items: flex-start;
+  border: solid orange;
 }
 
 #right {

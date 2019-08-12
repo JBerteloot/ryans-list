@@ -1,8 +1,16 @@
-import React from "react"
+import React, {useEffect} from "react"
+import {useSelector} from 'react-redux'
+import {getCategories} from '../actions/actions'
 
 import CategoryList from "./CategoryList"
 
 export default props => {
+  const categories = useSelector(appState => appState.categories)
+
+  useEffect (() => {
+    getCategories()
+  }, [])
+
   return (
     <div id="home">
       <aside id="left">
@@ -21,24 +29,11 @@ export default props => {
           <p>las vegas</p>
         </header>
         <div className="categories">
-          <div className="categorybox">
-            <CategoryList /> 
+          {categories.map((categ, i) => (
+          <div key={'maincat' + i} className="categorybox">
+            <CategoryList {...categ} /> 
           </div>
-          <div className="categorybox">
-            <CategoryList /> 
-          </div>
-          <div className="categorybox">
-            <CategoryList /> 
-          </div>
-          <div className="categorybox">
-            <CategoryList /> 
-          </div>
-          <div className="categorybox">
-            <CategoryList /> 
-          </div>
-          <div className="categorybox">
-            <CategoryList /> 
-          </div>
+          ) )}
         </div>
       </main>
       
