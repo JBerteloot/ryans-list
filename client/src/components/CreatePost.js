@@ -1,7 +1,7 @@
 import React, {useEffect} from "react"
 import {add, selectCategory} from "../actions/actions"
 import {useSelector} from 'react-redux'
-import Redirect from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export default props => {
   const newPost = useSelector(appState => appState.newPost)
@@ -32,7 +32,7 @@ export default props => {
   return (
     <div className="createpostpage">
       <header>
-        <p>las vegas</p>
+        <Link to="/"><p>las vegas</p></Link>
         <aside id="leftnewpost">
           <p>[ log in ]</p>
           <p>[ create account ]</p>
@@ -40,22 +40,14 @@ export default props => {
       </header>
       <main>
         <form className="newpost">
+          <div>
+            <select onChange={e => newPost.category_id = e.target.value}>
+              {categories.map((categ, i) => (
+                <option value={categ.id}>{categ.name}</option>
+              ))}
+            </select>
+          </div>
           <section id="one">
-            <div>
-              <select onChange={e => newPost.category_id = e.target.value}>
-                {categories.map((categ, i) => (
-                  <option value={categ.id}>{categ.name}</option>
-                ))}
-              </select>
-            </div>
-            {/* <div>
-              <select>
-              {subcategories.map((categ, i) => (
-                  <option value={categ.id}>{categ.name}</option>
-                ))}
-              </select>
-            </div> */}
-
             <span>
               <label for="title">posting title</label>
               <input type="text" id="title" onChange={e => newPost.title = e.target.value} />

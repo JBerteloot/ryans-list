@@ -26,12 +26,10 @@
 }
 
 #filteraside {
-  border: solid orange;
   width: 20%;
 }
 
 .rightasidecat {
-    border: solid orange;
     width: 15%;
 }
 
@@ -46,6 +44,7 @@
   border-top: .5px solid rgb(195, 195, 195);
   border-bottom: .5px solid rgb(195, 195, 195);
   text-align: center;
+  margin-right: 10px;
 }
 
 .categboxheader a {
